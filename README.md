@@ -1,5 +1,5 @@
-# Gulp & Sass Project
-
+### Gulp & Sass Project
+<br>
 # Gulp
 
 * kurulu olması gereken paketler ;
@@ -29,6 +29,8 @@
 ---
 
 * <b>gulpfile.js</b> sayfası ekle
+
+> <b>gulpfile.js</b>
 
 ```js
 const gulp = require('gulp');
@@ -61,11 +63,17 @@ exports.style = style;
 exports.watch = watch;
 ```
 
+---
+
 * scss dizini içine <b>styles.scss</b> sayfası ekle
+
+---
 
 #### terminal - son adım
 
 ```gulp style```
+
+---
 
 #### başlatmak için
 
