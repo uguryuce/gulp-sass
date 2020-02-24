@@ -4,7 +4,7 @@
 
 # Gulp
 
-* kurulu olması gereken paketler ;
+* packages must be set up ;
 
 > node
 
@@ -12,12 +12,12 @@
 
 ---
 
-*  IDE üzerinden proje için oluşturulan klasörü aç
-* <b>index.html</b> sayfası ekle
-* index.html içine css import et <b>href = "css/styles.css"</b>
+* Open the folder created for the project with IDE
+* add <b>index.html</b> page
+* import css into index.html <b>href = "css/styles.css"</b>
 
 ---
-* klasör oluştur -> <b>scss</b>
+* create folder -> <b>scss</b>
 ---
 
 #### terminal
@@ -30,7 +30,7 @@
 
 ---
 
-* <b>gulpfile.js</b> sayfası ekle
+* add <b>gulpfile.js</b> page
 
 > <b>gulpfile.js</b>
 
@@ -67,17 +67,17 @@ exports.watch = watch;
 
 ---
 
-* scss dizini içine <b>styles.scss</b> sayfası ekle
+* into scss folder add <b>styles.scss</b> page
 
 ---
 
-#### terminal - son adım
+#### terminal - final step
 
 ```gulp style```
 
 ---
 
-#### başlatmak için
+#### for start
 
 ``` gulp watch```
 
