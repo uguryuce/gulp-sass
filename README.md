@@ -1,5 +1,7 @@
 ### Gulp & Sass Project
+
 <br>
+
 # Gulp
 
 * kurulu olması gereken paketler ;
