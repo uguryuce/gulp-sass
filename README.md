@@ -10,7 +10,7 @@
 
 ---
 
-*  editör üzerinden proje için oluşturulan klasörü aç
+*  IDE üzerinden proje için oluşturulan klasörü aç
 * <b>index.html</b> sayfası ekle
 * index.html içine css import et <b>href = "css/styles.css"</b>
 
