@@ -1,0 +1,23 @@
+.Header {
+    border-bottom: 1px solid #999999;
+    
+    .container {
+        display: flex;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    &-menu {
+        margin-left: auto;
+        display: flex;
+    }
+    
+}
+
+/* .header ve .header-2 class ına sahip olan etiket için
+.header.header-2{
+
+}
+*/
+

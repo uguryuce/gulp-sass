@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/* */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -345,3 +347,27 @@ table {
 
 td {
   padding: 0; }
+
+.container {
+  background-color: white;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* */
+.Header {
+  border-bottom: 1px solid #999999; }
+  .Header .container {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .Header-menu {
+    margin-left: auto;
+    display: flex; }
+
+/* .header ve .header-2 class ına sahip olan etiket için
+.header.header-2{
+
+}
+*/
