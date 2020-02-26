@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .Header {
-  border-bottom: 1px solid #999999; }
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
   .Header .container {
     display: flex;
     align-items: center;

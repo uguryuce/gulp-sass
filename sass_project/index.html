@@ -4,13 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i&display=swap"
+        rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/styles.css">
     <title>SASS</title>
 </head>
 
 <body>
+
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <symbol id="icon-menu" viewBox="0 0 32 32">
+                <title>icon-menu</title>
+                <path d="M2 6h28v6h-28zM2 14h28v6h-28zM2 22h28v6h-28z"></path>
+            </symbol>
+        </defs>
+    </svg>
+
+
 
     <header class="Header">
 
@@ -25,6 +38,12 @@
                     <a href="">Register</a>
                     <a href="">Sign In</a>
                 </div>
+
+                <button class="Header-menu-switch" type="button">
+                    <svg class="icon icon-menu">
+                        <use xlink:href="#icon-menu"></use>
+                    </svg>
+                </button>
                 <a class="button" href="">List your property</a>
 
                 <div class="Header-menu-helper">

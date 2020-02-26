@@ -357,7 +357,16 @@ td {
 a {
   color: #083b87; }
 
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor; }
+
 body {
+  font-size: 16px;
   font-family: "Open Sans", sans-serif; }
 
 .button {
@@ -373,7 +382,7 @@ body {
 
 /* */
 .Header {
-  border-bottom: 1px solid #999999; }
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
   .Header .container {
     display: flex;
     align-items: center;
