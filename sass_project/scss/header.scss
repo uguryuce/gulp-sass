@@ -1,18 +1,75 @@
+$finger-size: 40px;
+$color-soft-blue: #f1f6ff;
+$border-radius: 3px;
+$max-width: 1200px;
+$gutter: 20px;
+$color-navy: #083b87;
+$color-blue: #01acee;
+$font-family: "Open Sans", sans-serif;
+
 .Header {
-    border-bottom: 1px solid #999999;
-    
-    .container {
-        display: flex;
+  border-bottom: 1px solid #999999;
+
+  .container {
+    display: flex;
+    align-items: center;
+    height: 64px;
+  }
+
+  &-menu {
+    margin-left: auto;
+    display: flex;
+
+    &-user {
+      display: flex;
+      a {
+        display: inline-flex;
         align-items: center;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: $finger-size;
+
+        &:hover {
+          background-color: rgba(0,0,0,0.05);
+        }
+      }
     }
 
-    &-menu {
-        margin-left: auto;
-        display: flex;
+    &-helper {
+      display: flex;
+      margin-left: 20px;
+
+      select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        border: 1px solid #e0e6f1;
+        background-color: transparent;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: $finger-size;
+        border-radius: 0;
+        color: $color-navy;
+        
+
+        &:nth-child(1) {
+          border-bottom-left-radius: $border-radius;
+          border-top-left-radius: $border-radius;
+        }
+
+        &:nth-child(2) {
+          border-left-width: 0;
+          border-bottom-right-radius: $border-radius;
+          border-top-right-radius: $border-radius;
+        }
+      }
     }
-    
+  }
+
+  &-logo {
+    img {
+      width: 114px;
+    }
+  }
 }
 
 /* .header ve .header-2 class ına sahip olan etiket için
@@ -20,4 +77,3 @@
 
 }
 */
-
