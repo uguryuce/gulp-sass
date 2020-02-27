@@ -1,0 +1,48 @@
+@charset "UTF-8";
+.Header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
+  .Header .container {
+    display: flex;
+    align-items: center;
+    height: 64px; }
+  .Header-menu {
+    margin-left: auto;
+    display: flex; }
+    .Header-menu-user {
+      display: flex; }
+      .Header-menu-user a {
+        display: inline-flex;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 40px; }
+        .Header-menu-user a:hover {
+          background-color: rgba(0, 0, 0, 0.05); }
+    .Header-menu-helper {
+      display: flex;
+      margin-left: 20px; }
+      .Header-menu-helper select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        border: 1px solid #e0e6f1;
+        background-color: transparent;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 40px;
+        border-radius: 0;
+        color: #083b87; }
+        .Header-menu-helper select:nth-child(1) {
+          border-bottom-left-radius: 3px;
+          border-top-left-radius: 3px; }
+        .Header-menu-helper select:nth-child(2) {
+          border-left-width: 0;
+          border-bottom-right-radius: 3px;
+          border-top-right-radius: 3px; }
+  .Header-logo img {
+    width: 114px; }
+
+/* .header ve .header-2 class ına sahip olan etiket için
+.header.header-2{
+
+}
+*/

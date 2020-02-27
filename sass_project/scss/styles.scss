@@ -1,7 +1,7 @@
-@import "variable";
+@import "config/variable";
 /* */
-@import "normalize";
-@import "formalize";
-@import "global";
+@import "helper/normalize";
+@import "helper/formalize";
+@import "helper/global";
 /* */
-@import "header";
+@import "global/header";
