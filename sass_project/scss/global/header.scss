@@ -1,20 +1,43 @@
 @import "../config/variable.scss";
+@import "../config/mixin.scss";
 
 .Header {
   border-bottom: 1px solid rgba(0,0,0,0.15);
 
   .container {
+    position: relative;
     display: flex;
     align-items: center;
     height: 64px;
   }
 
-  &-menu {
+  &-switch {
     margin-left: auto;
+
+    @include mq {
+      display: none;
+    }
+}
+
+  &-menu {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    background-color: gray;
     display: flex;
+    flex-direction: column;
+
+    @include mq("tablet") {
+      display: flex;
+      margin-left: auto;
+      
+    }
 
     &-user {
+      margin-right: 10px;
       display: flex;
+      flex-direction: column;
       a {
         display: inline-flex;
         align-items: center;
@@ -28,13 +51,10 @@
       }
     }
 
-    &-switch {
-        svg {
-            
-        }
-    }
+    
 
     &-helper {
+      flex-direction: column;
       display: flex;
       margin-left: 20px;
 

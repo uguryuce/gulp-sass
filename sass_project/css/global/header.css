@@ -2,14 +2,31 @@
 .Header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
   .Header .container {
+    position: relative;
     display: flex;
     align-items: center;
     height: 64px; }
+  .Header-switch {
+    margin-left: auto; }
+    @media (min-width: 768px) {
+      .Header-switch {
+        display: none; } }
   .Header-menu {
-    margin-left: auto;
-    display: flex; }
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    background-color: gray;
+    display: flex;
+    flex-direction: column; }
+    @media (min-width: 768px) {
+      .Header-menu {
+        display: flex;
+        margin-left: auto; } }
     .Header-menu-user {
-      display: flex; }
+      margin-right: 10px;
+      display: flex;
+      flex-direction: column; }
       .Header-menu-user a {
         display: inline-flex;
         align-items: center;
@@ -19,6 +36,7 @@
         .Header-menu-user a:hover {
           background-color: rgba(0, 0, 0, 0.05); }
     .Header-menu-helper {
+      flex-direction: column;
       display: flex;
       margin-left: 20px; }
       .Header-menu-helper select {
