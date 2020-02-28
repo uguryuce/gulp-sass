@@ -1,0 +1,11 @@
+.Navigation {
+  height: 50px;
+  background-color: #f1f6ff; }
+  .Navigation .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll; }
+  .Navigation-item {
+    margin-right: 20px;
+    font-size: 0.9em; }
