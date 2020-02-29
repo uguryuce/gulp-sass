@@ -1,6 +1,6 @@
 .Navigation {
   height: 50px;
-  background-color: #f1f6ff; }
+  background-color: #F1F6FF; }
   .Navigation .container {
     height: 100%;
     display: flex;
@@ -8,4 +8,5 @@
     overflow-x: scroll; }
   .Navigation-item {
     margin-right: 20px;
-    font-size: 0.9em; }
+    font-size: 0.9em;
+    color: #083B87; }

@@ -1,9 +1,9 @@
-@import "../config/variable.scss";
 @import "../config/mixin.scss";
+@import "../config/variable.scss";
+$Header-height: 68px;
 
 .Header {
-  border-bottom: 1px solid #ddd;
-  height: 68px;
+  height: $Header-height;
 
   .container {
     position: relative;
@@ -12,11 +12,16 @@
     height: 100%;
   }
 
+  &-logo {
+    img {
+      width: 144px;
+    }
+  }
+
   &-switch {
-    margin-left: auto;
     position: relative;
     left: 10px;
-
+    margin-left: auto;
     @include mq {
       display: none;
     }
@@ -25,31 +30,31 @@
   &-menu {
     pointer-events: none;
     opacity: 0;
-    //transform: translateX(100%);
-    transition: .4s;
+    transition: .2s;
     display: flex;
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
-    top: 100%;
-    padding-bottom: 20px;
+    top: $Header-height;
     padding-left: $gutter;
     padding-right: $gutter;
+    padding-bottom: 20px;
     flex-direction: column;
     background-color: white;
-    box-shadow: 0 20px 30px rgba(black, 0.2);
+    box-shadow: 0 20px 30px rgba(black, .2);
 
     .Header.menu-show & {
+      pointer-events: auto;
       opacity: 1;
       //transform: translateY(0);
-      pointer-events: auto;
     }
 
-    @include mq("tablet"){
+    @include mq("tablet") {
+      pointer-events: auto;
       opacity: 1;
-      margin-left: auto;
-      transform: translateY(0);
+      //transform: translateY(0);
       transition: 0s;
+      margin-left: auto;
       flex-direction: row;
       position: static;
       box-shadow: none;
@@ -58,14 +63,13 @@
       padding-right: 0;
       padding-bottom: 0;
     }
- 
+
     &-user {
       margin-right: 10px;
       display: flex;
       flex-direction: column;
       align-items: center;
-
-      @include mq("tablet"){
+      @include mq("tablet") {
         flex-direction: row;
       }
 
@@ -77,9 +81,8 @@
         padding-left: 20px;
         padding-right: 20px;
         height: $finger-size;
-
         &:hover {
-          background-color: rgba(0, 0, 0, 0.05);
+          background-color: #eee;
         }
       }
     }
@@ -87,7 +90,6 @@
     &-property {
       margin-top: 20px;
       justify-content: center;
-
       @include mq("tablet") {
         margin-top: 0;
       }
@@ -106,37 +108,25 @@
       select {
         -webkit-appearance: none;
         -moz-appearance: none;
-        border: 1px solid #e0e6f1;
         background-color: transparent;
+        border: 1px solid #E0E6F1;
         padding-left: 10px;
         padding-right: 10px;
-        height: $finger-size;
         border-radius: 0;
         color: $color-navy;
+        height: $finger-size;
 
         &:nth-child(1) {
           border-bottom-left-radius: $border-radius;
           border-top-left-radius: $border-radius;
         }
-
         &:nth-child(2) {
           border-left-width: 0;
           border-bottom-right-radius: $border-radius;
           border-top-right-radius: $border-radius;
         }
       }
-    }
-  }
 
-  &-logo {
-    img {
-      width: 114px;
     }
   }
 }
-
-/* .header ve .header-2 class ına sahip olan etiket için
-.header.header-2{
-
-}
-*/
